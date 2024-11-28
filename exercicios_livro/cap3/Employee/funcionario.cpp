@@ -8,28 +8,19 @@ using namespace std;
 
 #include "Employee.h" // inclui a definição da classe Eployee
 
-// função que define o salario anual
-double salarioAnual(double salario)
-{
-    return salario * 12;
-} // fim da função salarioAnual
-
-// função que define o valor do aumento
-double aumento(double salario, double taxa)
-{
-    return salario * taxa;
-} // fim da função aumento
-
 // a função main inicia e exetura o programa
 int main()
 {
     // cria dois objetos Employee
-    Employee maria("Maria", "Silva", 4900);
-    Employee jose("Jose", "Ferreira", 4500);
+    Employee maria("Maria", "Silva", 1680.4);
+    Employee jose("Jose", "Ferreira", 1503);
+
+    double salarioMaria = maria.getSalario();
+    double salarioJose = jose.getSalario();
 
     // determina o salário anual
-    double salarioAnualMaria = salarioAnual(maria.getSalario());
-    double salarioAnualJose = salarioAnual(jose.getSalario()); 
+    double salarioAnualMaria = salarioMaria * 12;
+    double salarioAnualJose = salarioJose * 12; 
 
     // exibe o valor do salário anual
     cout << "O salario anual de " << maria.getNome() << " " << maria.getSobrenome()
@@ -38,17 +29,20 @@ int main()
         << " eh de: " << salarioAnualJose << endl;
 
     // define um aumento de 10%
-    double acrescimo = 0;
+    double acrescimo = 10.0 / 100;
+    double aumento = 0;
 
-    acrescimo = aumento(maria.getSalario(), 0.1);
-    maria.setSalario(acrescimo + maria.getSalario());
+    aumento = salarioMaria * acrescimo;
+    maria.setSalario(aumento + salarioMaria);
 
-    acrescimo = aumento(jose.getSalario(), 0.1);
-    jose.setSalario(acrescimo + jose.getSalario());
+    aumento = salarioJose * acrescimo;
+    jose.setSalario(aumento + salarioJose);
 
     // atualiza o salário anual
-    salarioAnualMaria = salarioAnual(maria.getSalario());
-    salarioAnualJose = salarioAnual(jose.getSalario()); 
+    salarioMaria = maria.getSalario();
+    salarioJose = jose.getSalario();
+    salarioAnualMaria = salarioMaria * 12;
+    salarioAnualJose = salarioJose * 12; 
 
     cout << "\nO novo salario anual de " << maria.getNome() << " " << maria.getSobrenome()
         << " eh de: " << salarioAnualMaria << endl;
