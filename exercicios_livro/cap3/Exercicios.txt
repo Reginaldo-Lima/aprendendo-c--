@@ -1,0 +1,23 @@
+3.5 Explique a diferença entre um protótipo de função e uma definição de função.
+
+R- O protótipo de função é uma declaração de função que informa ao compilador o nome da função, seu tipo de retorno e os tipos de seus parâmetros, sem informar como esta função será implementada. A definição de uma função mostra como está função é implementada, como seus parâmetros seram utilizados e de qual maneira essa função retorna algum valor.
+
+3.6 O que é um construtor-padrão? Como os membros de dados de um objeto são inicializados se uma classe tiver apenas um construtor-padrão implicitamente definido?
+
+R- O construtor-padrão é definido implicitamente pelo compilador quando se cria um objeto de classe sem um construtor definido. Os membros são inicializados com valores aleatórios, podendo conter sujeira no armazenamento desses valores na memória caso não seja definido um valor padrão durante a definição desse membro.
+
+3.7 Explique o propósito de um membro de dados.
+
+R- São atributos que são portados como o objeto quando ele é utilizado em um programa. Normalmente os membros de dados são declarados com o especificador de acesso privete, e esses dados são incapsulados no objedo durante sua criação (instanciamento).
+
+3.8 O que é um arquivo de cabeçalho? O que é um arquivo de código-fonte? Discuta o propósito de cada.
+
+R- Um arquivo de cabeçalho trás as definições de classes, com os protótipos de funções pertencentes a estas classes, tendo o objetivo de separar a declaração dessas classes dos seus códigos-cliente e também dos códigos de implementação. Os arquivos de código-fonte tanto podém ser o arquivo principal de onde o programa é executado, como arquivos que trazem as implementaçôes das funções-membros das classes definidas no arquivo de cabeçalho.
+
+3.9 Explique como um programa poderia utilizar a classe string sem inserir uma declaração using.
+
+R- Sempre que fosse chamar a classe string seria necessário utilizar o namespace std seguido do operador de resolução de escopo binário (::), da seguinte forma std::string.
+
+3.10 Explique por que uma classe poderia fornecer uma função set e uma função get para um membro de dados.
+
+R- Para que as outras funções-membro da classe possam modificar e obter as informações desses membros de dados de forma indireta, e para que essas informações também possam ser acessadas fora da definição de classes, através dos dos seus objetos instanciado, além de permitir que se hover modificações nesses membros de dados sejam necessário fazer ajustes somente nas funções set e get.
