@@ -9,7 +9,7 @@ using namespace std;
 #include "Employee.h" // inclui a definição da classe Employee
 
 // o construtor inicializa os membros de dados da classe
-Employee::Employee(string nome, string sobrenome, double salario)
+Employee::Employee(string nome, string sobrenome, int salario)
 {
     setNome(nome);
     setSobrenome(sobrenome);
@@ -49,7 +49,7 @@ string Employee::getSobrenome()
     return sobrenome;
 } // fim da função getSobrenome
 
-double Employee::getSalario()
+int Employee::getSalario()
 {
     return salario;
 }

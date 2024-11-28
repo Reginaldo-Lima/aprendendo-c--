@@ -12,42 +12,33 @@ using namespace std;
 int main()
 {
     // cria dois objetos Employee
-    Employee maria("Maria", "Silva", 1680.4);
+    Employee maria("Maria", "Silva", 1680);
     Employee jose("Jose", "Ferreira", 1503);
-
-    double salarioMaria = maria.getSalario();
-    double salarioJose = jose.getSalario();
-
-    // determina o salário anual
-    double salarioAnualMaria = salarioMaria * 12;
-    double salarioAnualJose = salarioJose * 12; 
 
     // exibe o valor do salário anual
     cout << "O salario anual de " << maria.getNome() << " " << maria.getSobrenome()
-        << " eh de: " << salarioAnualMaria << endl;
+        << " eh de: " << maria.getSalario() * 12 << endl;
     cout << "O salario anual de " << jose.getNome() << " " << jose.getSobrenome()
-        << " eh de: " << salarioAnualJose << endl;
+        << " eh de: " << jose.getSalario() * 12 << endl;
 
     // define um aumento de 10%
-    double acrescimo = 10.0 / 100;
-    double aumento = 0;
+    int taxa = 10;
+    int acrescimo = 0;
+    int novoSalario = 0;
 
-    aumento = salarioMaria * acrescimo;
-    maria.setSalario(aumento + salarioMaria);
+    acrescimo = (maria.getSalario() * taxa) / 100;
+    novoSalario = maria.getSalario() + acrescimo;
+    maria.setSalario(novoSalario);
 
-    aumento = salarioJose * acrescimo;
-    jose.setSalario(aumento + salarioJose);
+    acrescimo = (jose.getSalario() * taxa) / 100;
+    novoSalario = jose.getSalario() + acrescimo;
+    jose.setSalario(novoSalario);
 
-    // atualiza o salário anual
-    salarioMaria = maria.getSalario();
-    salarioJose = jose.getSalario();
-    salarioAnualMaria = salarioMaria * 12;
-    salarioAnualJose = salarioJose * 12; 
 
     cout << "\nO novo salario anual de " << maria.getNome() << " " << maria.getSobrenome()
-        << " eh de: " << salarioAnualMaria << endl;
+        << " eh de: " << maria.getSalario() * 12 << endl;
     cout << "O novo salario anual de " << jose.getNome() << " " << jose.getSobrenome()
-        << " eh de: " << salarioAnualJose << endl;
+        << " eh de: " << jose.getSalario() * 12 << endl;
 
     return 0;
 } // fim da função main

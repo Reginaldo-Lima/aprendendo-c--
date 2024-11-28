@@ -9,15 +9,15 @@ using namespace std;
 class Employee
 {
 public:
-    Employee(string nome, string sobrenome, double salario); // o construtor inicializa os três membros da classe
+    Employee(string nome, string sobrenome, int salario); // o construtor inicializa os três membros da classe
     void setNome(string); // configura o nome
     string getNome(); // obtém o nome
     void setSobrenome(string);  // configura o sobrenome
     string getSobrenome(); // obtém o sobrenome
     void setSalario(double); // configura o salário
-    double getSalario(); // obtém o salário
+    int getSalario(); // obtém o salário
 private:
     string nome; 
     string sobrenome;
-    double salario;
+    int salario;
 }; // fim da classe Employee
