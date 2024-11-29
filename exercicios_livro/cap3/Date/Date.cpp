@@ -21,7 +21,7 @@ void Date::setDia(int d)
 {
     if (d > 0)
         dia = d;
-    else
+    if (d < 0)
         dia = 1;
 } // fim da função setDia
 
@@ -30,7 +30,7 @@ void Date::setMes(int m)
 {
     if ((m > 0) && (m <= 12))
         mes = m;
-    else
+    if ((m <= 0) && (m > 12))
         mes = 1;
 } // fim da função setMes
 
@@ -39,7 +39,7 @@ void Date::setAno(int a)
 {
     if (a > 0)
         ano = a;
-    else
+    if (a <= 0)
         ano = 1;
 } // fim da função setAno
 

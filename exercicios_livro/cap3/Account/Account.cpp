@@ -20,7 +20,7 @@ void Account::setBalance(int valor)
     valor;
     if(valor >= 0) // verifica se o valor inicial informado para saldo é valido
         balance= valor; // configura o valor de saldo para o valor informado
-    else
+    if (valor < 0)
     {
         balance = 0;
         // exibe uma messagem informando o erro.
@@ -48,6 +48,6 @@ void Account::debit( int valor)
     int debito = getBalance() - valor;
     if(valor <= getBalance())
         setBalance( debito );
-    else
+    if (valor > getBalance())
         cout << "\nDebit amount exceeded account balance." << endl;
 } // fim da função debit

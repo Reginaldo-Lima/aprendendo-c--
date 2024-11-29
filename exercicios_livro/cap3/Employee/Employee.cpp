@@ -33,7 +33,7 @@ void Employee::setSalario(double valor)
 {
     if (valor >= 0)
         salario = valor;
-    else
+    if (valor < 0)
         salario = 0;
 } // fim da função setSalario
 

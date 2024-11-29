@@ -34,7 +34,7 @@ void Invoice::setQuantidade(int qtd )
 {
     if (qtd >= 0 )
         quantidade = qtd;
-    else
+    if (qtd < 0)
         quantidade = 0;
 } // fim da função setQuantidade
 
@@ -43,7 +43,7 @@ void Invoice::setPreco( int valor )
 {
     if ( valor >= 0 )
         preco = valor;
-    else
+    if (valor < 0)
         preco = 0;
 } // fim da função setPreco
 
