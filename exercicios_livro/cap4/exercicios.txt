@@ -1,0 +1,66 @@
+Respostas a lista de exercícios do capítulo 4
+
+Exercícios de Revisão:
+
+4.2 - Escreva 4 instruções C++ que adicionam 1 à variável do tipo inteiro x.
+
+x = x + 1;
+x+= 1
+x++
+++x
+
+4.3 -
+a :
+z = x++ + y;
+
+b :
+if (count > 10)
+    cout << "Count is greater than 10." << endl;
+
+c :
+total -= --x;
+
+d :
+q = q % divisor;
+q %= divisor;
+
+4.4 - 
+a :
+int sum, x;
+
+b :
+x = 1;
+
+c:
+sum = 0;
+
+d :
+sum += x;
+
+e :
+cout << "The sum is: " << sum << endl;
+
+4.6 - mostre o valor de cada variavel após o cálculo. Assuma que cada variavel tem o valor inteiro 5.
+a : product *= x++;
+    product = 25; x = 6;
+
+b : quotient /= ++x;
+    quotient = 0; x = 6;
+
+4.7 -
+a :
+    cin >> x;
+b :
+    cin >> y;
+c :
+    int i = 1;
+d :
+    int power = 1;
+e :
+    power *= x;
+f :
+    i++;
+g :
+    if (i <= y)
+h :
+    cout << power;

@@ -1,0 +1,41 @@
+Resolução do exercício 4.13
+1ª parte:
+Estruturar um pseudo código utilizando o refinamento passo a passo de cima para baixo
+A 2ª está em ex_04_13.cpp que mostra a implementação em instruções C++
+
+TOPO:
+
+-Calcular e exibir a quilometragem de veículos por litro de combustível
+
+1º refinamento
+
+	-1 Inicialização das variáveis
+	-2 Inserir a quilometragem e quantidade de combustível consumido, calcular a relação em km/l gasto e exibir essa relação para este veículo
+	-3 Exibir a quilometragem total por litro de combustível
+
+2º refinamento
+	-1
+		Iniciazar total de quilomêtros como zero
+		Inicializar o total de combustível como zero
+
+	-2
+		Solicitar ao usuário a quilometregam ou valor de sentinela
+		Inserir a quilometragem ou valor de sentinela
+
+		Enquanto não for digitado o valor de sentinela
+			Solicitar ao usuário a quantidade de combustível gasto
+			Inserir a quantidade de combustível
+			
+			Calcular a relação em km/l deste veículo
+			Exibir esta relação
+			
+			Adicionar a quilometragem ao total de quilometragem
+			Adicionar a quantidade de combustível ao total de combustível
+			
+			-3
+			Se o total de combustível for maior que zero
+				Calcular a relação total de quilometragem pelo total de litros consumidos
+				Exibir essa relação
+
+			Solicitar ao usuário a quilometregam ou valor de sentinela
+			Inserir a quilometragem ou valor de sentinela

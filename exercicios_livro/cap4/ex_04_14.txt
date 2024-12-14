@@ -1,0 +1,44 @@
+Resolução do exercício 4.14
+1ª parte:
+Estruturar um pseudo código utilizando o refinamento passo a passo de cima para baixo
+A 2ª está em ex_04_14.cpp que mostra a implementação em instruções C++
+
+Topo:
+Determine se o cliente excedeu o limite de crédito
+
+1º Refinamento:
+  1  Solicitar os dados ao usuário
+  2  Exibir o novo saldo 
+  3  Informar se o total de crédito foi excedido
+
+2º Refinamento:
+    -1
+    Solicitar o número da conta ao usuário (ou valor de sentinela)
+    Inserir o número da conta (ou sentinela)
+
+    Enquanto não encontar o valor de sentinela
+        Solicitar o saldo inicial
+        Inserir o saldo inicial
+
+        Solicitar o total de taxas
+        Inserir o total de taxas
+
+        Solicitar o total de créditos
+        Inserir o total de créditos
+
+        Solicitar o limite de crédito
+        Inserir o limite de crédito
+
+        -2
+        Calcular o novo saldo
+        Exibir o novo saldo
+
+        -3
+        Se o saldo atual for maior que o limite de crédito
+            Exibir número da conta
+            Exibir o limite de crédito
+            Exibir o saldo atual
+            Exibir Limite de credito ultrapassado.
+
+        Solicitar o número da conta ao usuário (ou valor de sentinela)
+        Inserir o número da conta (ou sentinela)
