@@ -1,0 +1,40 @@
+Exercício 4.17: ex_04_17.txt
+
+Pseudo código com refinamento passo a passo para resolução do exercício 4.17 da lista de exercícios do capítulo 04
+do livro "C++ Como Programar"
+
+Problema:
+Desenvolver um programa em C++, que utiliza uma instrução while para determinar e imprimir o maior número dos dez números inseridos pelo usuário.
+
+Dados conhecidos:
+O programa deve utilizar três variáveis, como segue:
+    counter:    Um contador para contar até 10 (isto é, monitorar quantos números foram inseridos e
+                 determinar quando todos os 10 números fora processados)
+    number:     A entrada numérica atual para o programa
+    largest:    O maior número encontrado até agora.
+
+Desenvolvimeto do pseudocódigo:
+
+Topo:
+Determinar e imprimir o maior número digitado entre os 10 inseridos
+
+1º refinamento
+-Inicialização das variáveis
+-Solicitar entrada do usário e determinar qual o maior número inserido até o momento
+
+2º refinamento
+
+1-
+    Inicialize counter como 1
+    Inicialize largest como 0
+
+2- Enquanto counter for menor que ou igual a 10
+    Solicite ao usuário a entrada de um número
+    Insira o valor em number
+
+    Se number for maior que ou igual a largest
+        atribua a largest o valor de number
+    
+    Imprima o valor de largest
+
+    incremente o valor de counter em 1

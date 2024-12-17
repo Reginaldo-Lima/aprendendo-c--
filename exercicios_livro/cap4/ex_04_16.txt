@@ -1,0 +1,48 @@
+Exercício 4.16: ex_04_16.txt
+
+Pseudo código com refinamento passo a passo para resolução do exercício 4.16 da lista de exercícios do capítulo 04
+do livro "C++ Como Programar"
+
+Problema:
+Desenvolver um programa C++ que utiliza uma instrução while para
+determinar o pagamento bruto de cada um dos vários funcionários.
+
+Dados conhecidos:
+A empresa paga um valor de "hora normal" para as primeiras 40 horas
+E paga "horas extras" com 50% de gratificação
+
+Desenvolvimeto do pseudocódigo:
+
+Topo:
+Determinar o pagamento bruto de cada funcionário com base nas horas trabalhadas
+
+1º refinamento
+- Inicialização das váriáveis
+- Calcular e exibir o valor do pagamento bruto de cada funcionário
+
+2º refinamento
+-1
+    Inicialize gratificação como 50
+
+-2
+    Solicite ao usuário as horas trabalhadas (ou valor de sentinela)
+    Insira as horas trabalhadas (ou valor de sentinela)
+
+    Enquanto não for inserido o valor de sentinela
+        Solicite ao usuário o valor por hora trabalhada
+        Insira o valor por hora trabalhada
+
+        Se horas trabalhadas for menor ou igual 40:
+            Atribua ao salario o produto de horas trabalhadas pelo valor por hora trabalhada
+        
+        Caso contrário:
+            Atribua ao salario o produto do valor da hora trabalhada por 40
+            Atribua a horas extras a diferença entre as horas trabalhadas e 40
+            Atribua ao valor da hora extra o produto entre o valor da hora trabalhada e a gratificação
+            Atribua ao valor adicional o produto das horas extras pelo valor das horas extras
+            Adicione ao salario o valor adicional
+
+        Imprima o valor de salario
+
+        Solicite ao usuário as horas trabalhadas (ou valor de sentinela)
+        Insira as horas trabalhadas (ou valor de sentinela)

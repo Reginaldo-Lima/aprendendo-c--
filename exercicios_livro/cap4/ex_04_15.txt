@@ -1,0 +1,38 @@
+Exercício 4.15: ex_04_15.txt
+
+Pseudo código com refinamento passo a passo para resolução do exercício 4.15 da lista de exercícios do capítulo 04
+do livro "C++ Como Programar"
+
+Problema:
+Desenvolver um programa C++ que utiliza uma instrução while para inserir
+as vendas brutas de cada vendedor durante a última semana e calcula e exibe
+os rendimentos desse vendedor. Processe os números de um vendedor por vez.
+
+Dados conhecidos:
+Os vendedores recebem $200 por semana mais 9% de suas vendas brutas por semana
+
+Elaboração do pseudo código com refinamento passo a passo
+
+Topo:
+Calcula e exibe os redimentos na semana de cada vendedor.
+
+1º refiamento:
+-Inicialização das variáveis
+-Calcular e exibir os rendimentos de cada vendedor
+
+2º refinamento
+-1
+    Inicialize fixo como 200.00;
+    Inicialize taxa de comissão como 9%
+
+-2
+    Solicite ao usuário o valor das vendas (ou valor de sentinela)
+    Insira o valor das vendas (ou valor de sentinela)
+    
+    Enquanto não for inserido o valor de sentinela
+        Atribua a extra o produto das vendas pela taxa de comissão
+        Atribua ao sálario a soma do fixo mais extra
+        Imprima na tela o valor do salario
+
+        Solicite ao usuário o valor das vendas (ou valor de sentinela)
+        Insira o valor das vendas (ou valor de sentinela)
