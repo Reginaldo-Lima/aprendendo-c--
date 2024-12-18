@@ -64,3 +64,126 @@ g :
     if (i <= y)
 h :
     cout << power;
+
+4.21 -
+Será impresso no console:
+++++++++
+****
+++++++++
+****
+++++++++
+****
+++++++++
+****
+++++++++
+****
+
+4.22 -
+Será impresso no console:
+<<<<<<<<<<
+>>>>>>>>>>
+<<<<<<<<<<
+>>>>>>>>>>
+<<<<<<<<<<
+>>>>>>>>>>
+<<<<<<<<<<
+>>>>>>>>>>
+<<<<<<<<<<
+>>>>>>>>>>
+
+4.23 - considere primeiro x = 9 e y = 11, e depois considere x = 11 e y = 9
+a-
+if (x < 10)
+    if (y > 10)
+        cout << "*****" << endl;
+    else
+        cout << "#####" << endl;
+        cout << "$$$$$" << endl;
+
+no primeiro caso será impresso:
+*****
+$$$$$
+
+no segundo caso será impresso:
+$$$$$
+
+b-
+if (x < 10)
+{
+    if (y > 10)
+        cout << "*****" << endl;
+}
+else
+{
+    cout << "#####" << endl;
+    cout << "$$$$$" << endl;
+}
+
+no primeiro caso será impresso:
+*****
+
+no segundo caso será impresso:
+#####
+$$$$$
+
+4.24 -
+a - suponha x=5 e y=8
+if (y == 8)
+{
+    if (x == 5)
+    {
+        cout << "@@@@@" << endl;
+    }
+    else
+    {
+        cout << "#####" << endl;
+    }
+
+    cout << "$$$$$" << endl;
+    cout << "&&&&&" << endl;
+}
+
+b - suponha x=5 e y=8
+if (y == 8)
+{
+    if (x == 5)
+    {
+        cout << "@@@@@" << endl;
+    }
+}
+else
+{
+    cout << "#####" << endl;
+    cout << "$$$$$" << endl;
+    cout << "&&&&&" << endl;
+}
+
+c - suponha x=5 e y=8
+if (y == 8)
+{
+    if (x == 5)
+    {
+        cout << "@@@@@" << endl;
+    }
+    else
+    {
+        cout << "#####" << endl;
+        cout << "$$$$$" << endl;
+    }
+    cout << "&&&&&" << endl;
+}
+
+d - suponha x=5 e y=7
+if (y == 8)
+{
+    if (x == 5)
+    {
+        cout << "@@@@@" << endl;
+    }
+}
+else
+{
+    cout << "#####" << endl;
+    cout << "$$$$$" << endl;
+    cout << "&&&&&" << endl;
+}

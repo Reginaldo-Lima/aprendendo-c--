@@ -1,0 +1,52 @@
+Exercício 4.19: ex_04_19.txt
+
+Pseudo código com refinamento passo a passo para resolução do exercício 4.19 da lista de exercícios do capítulo 04
+do livro "C++ Como Programar"
+
+Problema:
+Desenvolver um programa em C++, que utiliza uma instrução while para determinar e imprimir
+os dois maiores números dos dez números inseridos pelo usuário.
+
+Dados conhecidos:
+O programa deve utilizar quantro variáveis, como segue:
+    counter:        Um contador para contar até 10 (isto é, monitorar quantos números foram inseridos e
+                    determinar quando todos os 10 números fora processados)
+    number:         A entrada numérica atual para o programa
+    largest:        O maior número encontrado até agora.
+    secondLargest:  O segundo maior número encontrado
+
+Desenvolvimeto do pseudocódigo:
+
+Topo:
+Determinar e imprimir os dois maiores números digitados entre os 10 inseridos
+
+1º refinamento
+-Inicialização das variáveis
+-Solicitar entrada do usário e determinar quais os maiores números inseridos até o momento
+
+2º refinamento
+
+1-
+    Inicialize counter como 1
+    Inicialize largest como 0
+    Inicialize secondLargest como 0
+
+2- Enquanto counter for menor que ou igual a 10
+    Solicite ao usuário a entrada de um número
+    Insira o valor em number
+
+    incremente o valor de counter em 1
+
+    Se largest for igual a 0
+        Se secondLargest for igual a zero
+            atribua a largest o valor de numero
+
+    Caso contrário, Se number for maior que largest
+        atribua a largest o valor de number
+
+    Caso contrário, Se number for menor que largest
+        Se number for maior que secondLargest
+            atribua a secondLargest o valor de number
+    
+Imprima o valor de largest
+Imprima o valor de secondLargest
