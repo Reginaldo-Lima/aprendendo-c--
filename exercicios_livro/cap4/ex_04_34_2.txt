@@ -1,0 +1,49 @@
+Exercício 4.34 parte 2: ex_04_34_2.txt
+19/11/2024 por Reginaldo Moura
+
+Pseudo código para resolução do exercício 4.34 parte 2
+
+Problema:
+Escrever um programa que descriptografe dados.
+
+Dados conhecidos:
+-Os dados são inteiros de 4 dígitos
+-Substituir cada dígito pela subtração do dígito menos 7,
+    se a diferença for negativa se deve somar 10
+-Trocar o primeiro dígito pelo terceiro dígito 
+ e o segundo dígito pelo quarto dígito
+
+Pseudocódigo:
+
+Solicite um inteiro criptografado com quatro dígitos
+Insira o numero
+
+digito1 = numero / 1000
+digito2 = (numero / 100) % 10
+digito3 = (numero / 10) % 10
+digito4 = numero % 10
+
+digito1 -= 7
+se digito1 < 0
+    digito1 += 10
+digito2 -= 7
+se digito2 < 0
+    digito2 += 10
+digito3 -= 7
+se digito3 < 0
+    digito3 += 10
+digito4 -= 7
+se digito4 < 0
+    digito4 += 10
+
+temp = digito1
+digito1 = digito3
+digito3 = temp
+
+temp = digito2
+digito2 = digito4
+digito4 = temp
+
+original = digito1 * 1000 + digito2 * 100 + digito3 * 10 + digito4
+
+imprimir original

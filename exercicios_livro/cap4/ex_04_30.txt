@@ -1,0 +1,31 @@
+Exercício 4.30: ex_04_30.txt
+19/11/2024 por Reginaldo Moura
+
+Pseudo código para resolução do exercício 4.30
+
+Problema:
+Escrever um programa que recebe um raio de um circulo e calcula e imprime o diâmetro,
+a circunferência e a área.
+
+Dados conhecidos:
+-O raio tem que ser do tipo double
+-O valor de PI = 3,14159
+-Fórmulas:
+    diâmetro = 2 * raio
+    circuferência = 2 * PI * raio
+    área = PI * raio * raio
+
+Pseudocódigo:
+
+Inicializar PI como 3,14159
+
+Solicitar o valor do raio;
+Inserir o raio;
+
+Calcular o diâmetro
+Calcular a circunferência
+Calcular a área
+
+Imprimir o diâmetro
+Imprimir a circuferência
+Imprimir a área

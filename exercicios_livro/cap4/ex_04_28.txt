@@ -1,0 +1,42 @@
+Exercício 4.28: ex_04_28.txt
+19/11/2024 por Reginaldo Moura
+
+Pseudo código para resolução do exercício 4.28
+
+Problema:
+Imprimir um padrão de tabuleiro.
+
+Dados conhecidos:
+-Só posso utilizar 3 instruções de saída, uma de cada das seguintes:
+cout << "* ";
+cout << " ";
+cout << endl;
+-O padrão a ser impresso:
+* * * * * * *
+ * * * * * * *
+* * * * * * *
+* * * * * * *
+ * * * * * * *
+* * * * * * *
+ * * * * * * *
+* * * * * * *
+
+Pseudocódigo:
+
+Iniciazar linhas como 9;
+Inicializar contador como 1
+
+Enquanto contador for menor ou igual a linhas
+    Inicializar colunas = 7
+    Se contador for igual a 4
+        Incrementar contador em 1
+
+    Se o resto da divisão de contador por 2 for igual a 0 (se for par)
+        impimir " ";
+
+    Enquanto colunas for maior ou igual a 1
+        Imprimir "* "
+        Decrementar colunas em 1
+
+    Imprimir uma quebra de linha
+    Incrementar contador em 1

@@ -1,0 +1,39 @@
+Exercício 4.32: ex_04_32.txt
+19/11/2024 por Reginaldo Moura
+
+Pseudo código para resolução do exercício 4.32
+
+Problema:
+Escrever um programa que lê três valores e determina se esses valores poderiam
+ representar os lados de um triângulo
+
+Dados conhecidos:
+Nenhum dos lados do triângulo pode ser igual a zero ou negativo;
+A soma de quaisquer dois lados do triângulo deve ser maior que o terceiro lado
+
+Pseudocódigo:
+
+Solicite o primeiro lado;
+Insira o lado1;
+Solicite o segundo lado;
+Insira o lado2;
+Solicite o terceiro lado;
+Insira o lado3;
+
+Se lado1 for menor ou igual a 0
+    Imprimir que não é um triângulo
+
+Se lado2 for menor ou igual a 0
+    Imprimir que não é um triângulo
+
+Se lado3 for menor ou igual a 0
+    Imprimir que não é um triângulo
+
+Se a soma do lado1 mais o lado2 for maior que lado3
+    Imprimir que é um triângulo
+
+Caso contrário Se a soma do lado2 mais lado3 for maior que lado1
+    Imprimir que é um triângulo
+
+Caso contrário Se a soma do lado1 mais lado3 for maior que o lado2
+    Imprimir que é um triângulo

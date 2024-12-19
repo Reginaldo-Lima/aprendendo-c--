@@ -1,0 +1,40 @@
+Exercício 4.33: ex_04_33.txt
+19/11/2024 por Reginaldo Moura
+
+Pseudo código para resolução do exercício 4.33
+
+Problema:
+Escrever um programa que lê três valores e determina e imprime
+se eles poderiam ser os lados de um triângulo reto.
+
+Dados conhecidos:
+Nenhum dos lados do triângulo pode ser igual a zero ou negativo;
+A soma dos quadrados de dois lados é igual ao quadrado do terceiro lado
+
+Pseudocódigo:
+
+Solicite o primeiro lado
+Insira o lado1
+Solicite o segundo lado
+Insira o lado2
+Solicite o terceiro lado
+Insira o lado3
+
+Se lado1 for menor ou igual a zero
+    Imprimir que não é um triângulo
+    Sair do programa
+Se lado2 for menor ou igual a zero
+    Imprimir que não é um triangulo
+    Sair do programa
+Se lado3 for menor ou igual a zero
+    Imprimir que não é um triangulo
+    Sair do programa
+
+Se lado1 ao quadrado mais lado2 ao quadrado for igual a lado3 ao quadrado
+    Imprimir que é um triangulo reto
+Caso contrário, Se lado1 ao quadrado mais lado3 ao quadrado for igual a lado2 ao quadrado
+    Imprimir que é um triangulo reto
+Caso contrario, Se lado2 ao quadrado mais lado3 ao quadrado for igual a lado1 ao quadrado
+    Imprimir que é um triângulo reto
+Caso contrário
+    Imprimir que não é um triangulo reto

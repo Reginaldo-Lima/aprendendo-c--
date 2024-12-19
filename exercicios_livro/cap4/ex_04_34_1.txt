@@ -1,0 +1,40 @@
+Exercício 4.34 parte 1: ex_04_34_1.txt
+19/11/2024 por Reginaldo Moura
+
+Pseudo código para resolução do exercício 4.34 parte 1
+
+Problema:
+Escrever um programa que criptografe dados.
+
+Dados conhecidos:
+-Os dados são inteiros de 4 dígitos
+-Substituir cada dígito pelo (a soma dígito mais 7)módulo 10.
+-Trocar o primeiro dígito pelo terceiro dígito 
+ e o segundo dígito pelo quarto dígito
+
+Pseudocódigo:
+
+Solicite um inteiro com quatro dígitos
+Insira o numero
+
+digito1 = numero / 1000
+digito2 = (numero / 100) % 10
+digito3 = (numero / 10) % 10
+digito4 = numero % 10
+
+cripto1 = (digito1 + 7) % 10;
+cripto2 = (digito2 + 7) % 10;
+cripto3 = (digito3 + 7) % 10;
+cripto4 = (digito4 + 7) % 10;
+
+temp = digito1
+digito1 = digito3
+digito3 = temp
+
+temp = digito2
+digito2 = digito4
+digito4 = temp
+
+Criptografado = digito1 * 1000 + digito2 * 100 + digito3 * 10 + digito4
+
+imprimir Criptografado;

@@ -187,3 +187,18 @@ else
     cout << "$$$$$" << endl;
     cout << "&&&&&" << endl;
 }
+
+4.31 - qual o problema da instrução a seguir?
+cout << ++(x + y); 
+
+R- O compilador não conseque modificar o valor da expressão dentro dos parênteses
+utilizando o operador de incremento (ou decremento).
+
+Existe ao menos 2 soluções para resolver este problema:
+
+A primeira seria criar uma nova variável para receber o valor da expressão e 
+utilizar essa nova variável no lugar da expressão entre parênteses.
+E a segunda, sem necessitar de novas instruções, seria escolher uma das variáveis para 
+ser incrementada (ou decrementada).
+Assim temos:
+cout << (++x + y);
