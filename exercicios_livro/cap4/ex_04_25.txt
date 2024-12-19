@@ -1,0 +1,36 @@
+Exercicío 4.25: ex_04_25.txt
+
+Pseudo código para resolução do exercício 4.25
+
+Problema:
+Receber o tamanho do lado e imprimir um quadrado utilizando "*" e espaços em branco
+
+Dados conhecidos:
+o lado do quadrado deve estar entre 1 a 20
+
+Pseudocódigo:
+
+solicitar lado
+inserir lado
+
+se lado >= 1
+    se lado <= 20
+        linha = lado
+
+        enquanto linha >=1
+            coluna = lado
+            enquanto coluna >= 1
+                se linha for iqual a 1
+                    imprimir "*"
+                caso contrario, se linha for igual ao lado
+                    impimir "*"
+                caso contrario
+                    se coluna for igual 1
+                        imprimir "*"
+                    caso contrário, se coluna for igual a lado
+                        impimir "*"
+                    caso contrário
+                        imprimir " "
+                decrementar coluna em 1
+            imprimir quabra de linha
+            decrementar linha em 1
