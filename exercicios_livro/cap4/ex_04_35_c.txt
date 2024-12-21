@@ -1,0 +1,48 @@
+Exercício 4.35 item c: ex_04_35_c.txt
+19/11/2024 por Reginaldo Moura
+
+Pseudo código para resolução do exercício 4.35 item c.
+
+Problema:
+Escrever um programa que estima o valor da constante matemática e (constante de Euler)
+elevado a x, utilizando a sequência de Taylor 
+
+Dados conhecidos:
+-fatorial:
+    n! = n * (n - 1) * (n - 2) * ... * 1 (para valores de n maiores que 1)
+    e n! = 1 (para n = 0 ou n = 1) 
+-Euler
+    e = 1 + (1 / 1!) + (1 / 2!) + (1 / 3!) + ...
+-Taylor
+    e^x = 1 + (x / 1!) + (x^2 / 2!) + (x^3 / 3!) + ...
+
+Pseudocódigo:
+
+Inicialize fatorial como 1
+Inicialize ex = 1
+potencia = 1.0
+
+Solicite um valor para a quantidade de termos desejados;
+Insira termos;
+Solicite o valor da potência
+Insira x;
+
+Se termos for menor que 0
+    Imprimir que não é valido
+    sair do programa
+
+
+Caso contrário
+    Se potencia for igual a zero
+        Imprimir que e^0 é 1
+
+    Caso contrário
+        inicialize contador como 1
+        Enquanto contador menor que ou igual a termos
+            fatorial *= contador;
+            potencia *= x
+            ex += potencia / fatorial;
+            contador++;
+    
+
+imprimir o valor de e^x;

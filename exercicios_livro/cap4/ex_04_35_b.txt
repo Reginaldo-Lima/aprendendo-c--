@@ -1,0 +1,38 @@
+Exercício 4.35 item b: ex_04_35_b.txt
+19/11/2024 por Reginaldo Moura
+
+Pseudo código para resolução do exercício 4.35 item b.
+
+Problema:
+Escrever um programa que estima o valor da constante matemática e (constante de Euler)
+
+Dados conhecidos:
+-fatorial:
+    n! = n * (n - 1) * (n - 2) * ... * 1 (para valores de n maiores que 1)
+    e n! = 1 (para n = 0 ou n = 1) 
+-Euler
+    e = 1 + (1 / 1!) + (1 / 2!) + (1 / 3!) + ...
+
+
+Pseudocódigo:
+
+Inicialize fatorial como 1
+Inicialize e = 1
+
+Solicite um valor para a quantidade de termos desejados;
+Insira termos;
+Se termos for menor que 0
+    Imprimir que não é valido, a quantidade de termos não pode ser negativo.
+
+Caso contrário
+    Se termos for igual a 0
+        Imprimir que que o valor de e é 1
+    
+    Inicialize contador como 1
+    Enquanto contador menor ou igual a termos
+        fatorial *= contador;
+        e += 1 / fatorial;
+        contador++;
+
+    imprimir o valor de e;
+    

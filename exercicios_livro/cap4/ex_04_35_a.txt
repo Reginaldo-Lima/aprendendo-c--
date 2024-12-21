@@ -1,0 +1,34 @@
+Exercício 4.35 item a: ex_04_35_a.txt
+19/11/2024 por Reginaldo Moura
+
+Pseudo código para resolução do exercício 4.35 a.
+
+Problema:
+Lê um número inteiro não negativo e calcula e imprime seu fatorial
+
+Dados conhecidos:
+n! = n * (n - 1) * (n - 2) * ... * 1 (para valores de n maiores que 1)
+e
+n! = 1 (para n = 0 ou n = 1) 
+
+Pseudocódigo:
+
+Inicialize fatorial como 1
+
+Solicite um valor para n;
+Insira n;
+Se n < 0
+    Imprimir que não é valido
+Caso contrário
+    Se n igual a zero
+        imprimir n fatorial = 1
+        sair do programa
+    Se n igual a um
+        imprimir n fatorial = 1
+        sair do programa
+    
+    Enquanto n maior que 1
+        fatorial *= n;
+        n--;
+
+imprimir o fatorial;
